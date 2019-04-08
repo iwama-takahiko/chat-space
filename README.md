@@ -37,10 +37,9 @@
 | name| string  | |グループ名|
 
 ### Assocition
-`
-* has_many :messages
-* has_many :users, ___through: :groups_users___  多数対多数のアソシエーション実装のため
-`
+`* has_many :messages
+ * has_many :users, ___through: :groups_users___  多数対多数のアソシエーション実装のため'
+
 # groups_usersテーブル
 
 
