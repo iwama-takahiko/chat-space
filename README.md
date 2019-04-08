@@ -6,7 +6,7 @@
 # messages テーブル
   
 | Column | Type | Options |
-:---|:---:|---:|
+:---:|:---:|:---:|
 | boby | text |     |
 | image | string | 
 | user_id | integer | null:false,foreign_key: true |
