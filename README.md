@@ -7,11 +7,11 @@
   
 | Column | Type | Options | information |
 :---:|:---:|:---:|:--:|
-| id   | integer| null | 主キー|
-| boby | text    |     |
-| image| string  | 
-| user_id | integer | null:false,foreign_key: true |
-| group_id | integer | null:false,foreign_key: true|
+| id       | integer | null| 主キー|
+| text     | text    |     | 内容  |
+| image    | string  |     | 画像  |
+| user_id  | integer | null:false,foreign_key: true | 投稿したユーザのID（外部キー）|
+| group_id | integer | null:false,foreign_key: true | 送り先のgroupのID(外部キー,index)|
 
 ### Association
  * belongs_to :group
@@ -19,13 +19,18 @@
  
  # Users　テーブル
  
- | Column | Type | Options |
- :-:|:-:|:-:|
- |name|string| null:false,add_index:true|
- |email|string|null: false,unique:true|
+ | Column | Type | Options | infomation|
+ :-:|:-:|:-:|:-:|
+ | id |integer| |主キー|
+ |name|string | null:false,add_index:true|ユーザー名|
+ |email|string| null: false,unique:true |メールアドレス|
  
+ ### Assocition
+ * has_many :group
+ * has_many :group,***through: groups_users***
+ * has_many :massages
  
-
+# groupsテーブル
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
