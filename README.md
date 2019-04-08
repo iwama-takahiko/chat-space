@@ -1,4 +1,8 @@
-# README
+#開発環境(system dependencies)
+*Ruby 2.3.1
+*Rails 5.0.7
+
+#DB設計
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
