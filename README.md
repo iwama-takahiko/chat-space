@@ -27,7 +27,7 @@
  
  ### Assocition
  * has_many :group
- * has_many :group,***through: groups_users*** 　 ' 多数対多数のアソシエーション実装のため '
+ * has_many :group,***through: groups_users*** 　 `多数対多数のアソシエーション実装のため`
  * has_many :massages
  
 # groupsテーブル
