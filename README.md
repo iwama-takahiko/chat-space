@@ -5,8 +5,9 @@
 # DB設計（Datebase initialization)
 # messages テーブル
   
-| Column | Type | Options |
-:---:|:---:|:---:|
+| Column | Type | Options | information |
+:---:|:---:|:---:|:--:|
+| id   | integer| null | 主キー|
 | boby | text |     |
 | image | string | 
 | user_id | integer | null:false,foreign_key: true |
