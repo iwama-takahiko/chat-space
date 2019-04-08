@@ -2,7 +2,7 @@
 * Ruby 2.3.1
 * Rails 5.0.7
 
-# DB設計（Datebase creation)
+# DB設計（Datebase initialization)
 # messages テーブル
   
 | Column | Type | Options |
@@ -13,8 +13,10 @@
 | group_id | integer | null:false,foreign_key: true|
 
 ### Association
- * belongs_to:group
- * belongs_to:user
+ * belongs_to :group
+ * belongs_to :user
+ 
+ # Users　テーブル
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
