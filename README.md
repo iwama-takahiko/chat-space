@@ -20,7 +20,9 @@
  
  | Column | Type | Options |
  :-:|:-:|:-:|
- |name|string| null:false,upique: true|
+ |name|string| null:false,add_index:true|
+ |email|string|null: false,unique:true|
+ 
  
 
 This README would normally document whatever steps are necessary to get the
