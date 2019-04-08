@@ -44,4 +44,13 @@
 
 ## groups_usersテーブル
 
+| Colunm | Type | Options | infomation |
+:-:|:-:|:-:|:-:|
+| id      | integer | |主キー    |
+| user_id | string  | |外部キー  |
+| group_id| string  | |外部キー  |
+
+### Association
+* belongs_to :group
+* belongs_to :user
 
