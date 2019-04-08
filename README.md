@@ -8,8 +8,8 @@
 | Column | Type | Options | information |
 :---:|:---:|:---:|:--:|
 | id   | integer| null | 主キー|
-| boby | text |     |
-| image | string | 
+| boby | text    |     |
+| image| string  | 
 | user_id | integer | null:false,foreign_key: true |
 | group_id | integer | null:false,foreign_key: true|
 
