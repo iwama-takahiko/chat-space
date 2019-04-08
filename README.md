@@ -20,6 +20,7 @@
  
  | Column | Type | Options |
  :-:|:-:|:-:|
+ |name|string| null:false,upique: true|
  
 
 This README would normally document whatever steps are necessary to get the
