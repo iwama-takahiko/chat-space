@@ -1,9 +1,11 @@
-# 開発環境(system dependencies)
+# ChatSpace
+
+## 開発環境(system dependencies)
 * Ruby 2.3.1
 * Rails 5.0.7
 
-# DB設計（Datebase initialization)
-# messages テーブル
+## DB設計（Datebase initialization)
+## messages テーブル
   
 | Column | Type | Options | information |
 :---:|:---:|:---:|:--:|
@@ -17,7 +19,7 @@
  * belongs_to :group
  * belongs_to :user
  
- # Users　テーブル
+ ## Users　テーブル
  
  | Column | Type | Options | infomation|
  :-:|:-:|:-:|:-:|
@@ -29,7 +31,7 @@
  * has_many :messages
  * has_many :group,***through: groups_users*** 　 `多数対多数のアソシエーション実装のため`
  
-# groupsテーブル
+## groupsテーブル
 
 | Colunm | Type | Options | infomation |
 :-:|:-:|:-:|:-:|
@@ -37,9 +39,9 @@
 | name| string  | |グループ名|
 
 ### Assocition
-`* has_many :messages
- * has_many :users, ___through: :groups_users___  多数対多数のアソシエーション実装のため'
+* has_many :messages
+* has_many :users, ___through: :groups_users___  多数対多数のアソシエーション実装のため
 
-# groups_usersテーブル
+## groups_usersテーブル
 
 
