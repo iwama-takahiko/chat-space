@@ -5,9 +5,9 @@
     %ul.header__lists
       %li.list
         = link_to new_group_path do
-          = fa_icon 'pencil-square-o', class: 'icon'
+          = fa_icon 'edit', class: 'icon'
       %li.list
-        = link_to edit_user_path(current_user) do
+        = link_to edit_user_path do
           = fa_icon 'cog', class: 'icon'
   .groups
     .group
@@ -17,4 +17,3 @@
             = group.name
           .group__message
             = group.show_last_message
-    
