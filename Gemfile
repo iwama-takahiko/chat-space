@@ -70,4 +70,6 @@ gem 'mini_magick'
 gem "compass-rails"
 gem 'compass'
 gem 'font-awesome-rails'
-
+group :production do
+  gem 'unicorn', '5.4.1'
+end
