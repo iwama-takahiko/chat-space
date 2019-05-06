@@ -10,7 +10,7 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.3.1'
 
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['273bc778c5bb3a7d3d45d0cac45804ad52362a1aaec2818b931e6d616182cdb54a912a31e1d1795f8fd36d76dad6fb4095ca9b11537b4d835a6080c2ce44dc32']  ※例：~/.ssh/key_pem.pem
+                  keys: ['~/.ssh/ruby0630.pem']  
 
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
