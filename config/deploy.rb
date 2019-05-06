@@ -5,8 +5,23 @@ set :application, "chat_space"
 set :repo_url, "https://github.com/iwama-takahiko/chat-space"
 set :deploy_to, '/IWAMAnoMacBook-puro@~/projects/chat-space/'
 set :keep_releases, 5
-set :ssh_options, :port =&amp;gt; "22"
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
+set :rbenv_type, :user
+set :rbenv_ruby, '2.3.1'
 
+set :ssh_options, auth_methods: ['publickey'],
+                  keys: ['273bc778c5bb3a7d3d45d0cac45804ad52362a1aaec2818b931e6d616182cdb54a912a31e1d1795f8fd36d76dad6fb4095ca9b11537b4d835a6080c2ce44dc32']  ※例：~/.ssh/key_pem.pem
+
+set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
+set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
+set :keep_releases, 5
+
+after 'deploy:publishing', 'deploy:restart'
+namespace :deploy do
+  task :restart do
+    invoke 'unicorn:restart'
+  end
+end
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
