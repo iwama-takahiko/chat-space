@@ -51,7 +51,7 @@ server "3.14.51.32", user: "ec2-user", roles: %w{app db web}, my_property: :my_v
 # The server-based syntax can be used to override options:
 # ------------------------------------
 # server "example.com",
-#   user: "user_name",
+#   user: "user_name", １
 #   roles: %w{web app},
 #   ssh_options: {
 #     user: "user_name", # overrides user setting above
