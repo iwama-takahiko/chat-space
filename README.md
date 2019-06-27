@@ -1,5 +1,5 @@
 # ChatSpace
-
+![chatapp](https://raw.github.com/wiki/iwama-takahiko/chat-space/images/chat-space.git)
 ## 開発背景
 * slackのようなチャットアプリを独自で開発してみたいと思い開発を行う。
 * チャットでは非同期通信が必要なためjQueryで実装。
