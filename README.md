@@ -1,4 +1,4 @@
-# Chat-app
+# chat-space
 ![chat-app](https://raw.github.com/wiki/iwama-takahiko/chat-space/images/chatspece.mov.gif)
 ## 開発背景
 * slackのようなチャットアプリを独自で開発してみたいと思い開発を行う。
